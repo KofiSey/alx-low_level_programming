@@ -1,26 +1,27 @@
 #include <stdio.h>
 /**
- * main - print numbers of base 16 in lowercase
- * Return; 0
+ * main - print alphabet in lowercase
+ * Return: 0
  */
 int main(void)
 {
-	int j;
-	char m;
+	int c;
 
-	j = '0';
+	char o;
+
+	o = 'a';
 	while
-		(j < 10)
-		{
-			putchar(j + '0');
-			j++;
-		}
+		(c < 10)
+	{
+		putchar(c + '0');
+		c++;
+	}
 	while
-		(m <= 'f')
-		{
-			putchar(m);
-			m++;
-		}
+		(o <= 'f')
+	{
+		putchar(o);
+		o++;
+	}
 	putchar('\n');
 	return (0);
 }
