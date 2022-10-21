@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <ctype.h>
 /**
  * main - print alphabet in lowercase
  * Return: 0
@@ -10,6 +10,7 @@ int main(void)
 
 	for (lc = 'a'; lc <= 'z'; lc++)
 	{
+		lc = tolower(letter);
 		putchar(lc);
 	}
 	putchar('\n');
