@@ -1,10 +1,9 @@
-#include <unistd.h>
- #include "main.h"
+#include "main.h"
+/*
+ * main _ print _putchar
+ * Return: 0
+ */
 
-/**
-*main - function prints "_putchar" as output
-*Return: 0
-*/
 int main(void)
 {
 	char alxSchool[10] = "_putchar";
