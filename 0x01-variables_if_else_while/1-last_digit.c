@@ -1,33 +1,33 @@
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
 /**
- * main - assign a random number to a variable
- * Return: 0
- */
+*main - Assign a random number to the variable
+*Return: 0
+*/
 int main(void)
 {
 	int n;
-	int m;
+	int down;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	m = n % 10;
+	down = n % 10;
 
-	if (m > 5)
+	if (down == 0)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, m);
+		printf("Last digit of %d is %d and is 0\n", n, down);
 	}
-	else if (m == 0)
-	{
-		printf("Last digit of %d is %d and is 0\n", n, m);
-	}
-
 	else
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n"
-				, n, m);
+		if (down > 5)
+		{
+			printf("Last digit of %d is %d and is greater than 5\n", n, down);
+		}
+		else if (down < 6)
+		{
+			printf("Last digit of %d is %d and is less than 6 and not 0\n", n, down);
+		}
 	}
-
 	return (0);
 }
